@@ -5,6 +5,7 @@ export default defineNuxtConfig({
 	modules: ["@nuxtjs/i18n"],
 	i18n: {
 		// some of the options are taken from the runtimeConfig
+		debug: true,
 		strategy: "no_prefix",
 		differentDomains: true,
 		lazy: false,
