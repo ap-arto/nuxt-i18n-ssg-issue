@@ -4,6 +4,7 @@ export default defineNuxtConfig({
 	devtools: { enabled: true },
 	modules: ["@nuxtjs/i18n"],
 	i18n: {
+		debug: true,
 		// some of the options are taken from the runtimeConfig
 		strategy: "no_prefix",
 		differentDomains: true,
@@ -25,13 +26,13 @@ export default defineNuxtConfig({
 				files: ["es.json"],
 			},
 		],
-		detectBrowserLanguage: false,
 	},
 	runtimeConfig: {
 		public: {
 			i18n: {
 				baseUrl: "",
 				defaultLocale: "en",
+				detectBrowserLanguage: false,
 			},
 		},
 	},
